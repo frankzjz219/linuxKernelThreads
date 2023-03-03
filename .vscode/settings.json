@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "module.h": "c",
+        "time.h": "c",
+        "kthread.h": "c",
+        "init.h": "c",
+        "sched.h": "c",
+        "time64.h": "c",
+        "task.h": "c"
+    }
+}

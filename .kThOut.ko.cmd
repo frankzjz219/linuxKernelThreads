@@ -1,0 +1,1 @@
+cmd_/home/frank/study/kernelThread/kThOut.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -z noexecstack   --build-id  -T ./scripts/module-common.lds -o /home/frank/study/kernelThread/kThOut.ko /home/frank/study/kernelThread/kThOut.o /home/frank/study/kernelThread/kThOut.mod.o;  true

@@ -1,0 +1,1 @@
+cmd_/home/frank/study/kernelThread/kThOut.o := ld -m elf_x86_64  -z max-page-size=0x200000 -z noexecstack     -r -o /home/frank/study/kernelThread/kThOut.o /home/frank/study/kernelThread/kTh.o /home/frank/study/kernelThread/task.o
