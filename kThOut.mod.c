@@ -36,6 +36,7 @@ __used __section(__versions) = {
 	{ 0xc5850110, "printk" },
 	{ 0xebaeddf7, "device_create" },
 	{ 0xc4952f09, "cdev_add" },
+	{ 0x6bb70076, "wake_up_process" },
 	{ 0xbdfb6dbb, "__fentry__" },
 	{ 0xb65e5a32, "class_destroy" },
 	{ 0x2871e975, "__class_create" },
@@ -45,4 +46,4 @@ __used __section(__versions) = {
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "788BEEA91D7428DC78C07C8");
+MODULE_INFO(srcversion, "6568704E992EDE1BE45A40D");

@@ -35,6 +35,7 @@ void task(void)
     for (i = 0; i < SIZEOFMAT; i++)
     {
         threadStruct = kthread_create(calc, (void*)(seq+i), "CalcThread");
+        wake_up_process(threadStruct);
     }
 
     

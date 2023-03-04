@@ -20,7 +20,7 @@
 #include <linux/kthread.h> //kthread_create()、kthread_run()
 
 #define SIZEOFMAT 100
-#define SIZEOFVEC 100000
+#define SIZEOFVEC 100000000
 
 int calc(void *input);
 void task(void);
