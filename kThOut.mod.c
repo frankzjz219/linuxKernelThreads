@@ -28,10 +28,13 @@ __used __section(__versions) = {
 	{ 0x22b90774, "cdev_del" },
 	{ 0x2064fa56, "cdev_init" },
 	{ 0x3fd78f3b, "register_chrdev_region" },
+	{ 0xb43f9365, "ktime_get" },
 	{ 0x5e04e317, "device_destroy" },
 	{ 0x6091b333, "unregister_chrdev_region" },
 	{ 0xa6521794, "kthread_create_on_node" },
 	{ 0x15ba50a6, "jiffies" },
+	{ 0x55e77e8, "jiffies_64" },
+	{ 0xee8d74d6, "jiffies64_to_nsecs" },
 	{ 0x92ec510d, "jiffies64_to_msecs" },
 	{ 0xc5850110, "printk" },
 	{ 0xebaeddf7, "device_create" },
@@ -46,4 +49,4 @@ __used __section(__versions) = {
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "6568704E992EDE1BE45A40D");
+MODULE_INFO(srcversion, "B20950C9DE21A9911805CF7");

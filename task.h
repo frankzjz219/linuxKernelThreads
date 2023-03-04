@@ -15,12 +15,22 @@
 #include <linux/time.h>
 #include <linux/time64.h>
 #include <linux/jiffies.h>
+
+// #include <linux/param.h>
+
+#include <asm/msr.h>
+
+#include <linux/timex.h>
+
+#include <linux/ktime.h>
+
+
 /***************************************内核线程*************************************************/
 #include <linux/sched.h>   //wake_up_process()
 #include <linux/kthread.h> //kthread_create()、kthread_run()
 
 #define SIZEOFMAT 100
-#define SIZEOFVEC 100000000
+#define SIZEOFVEC 1000000000
 
 int calc(void *input);
 void task(void);

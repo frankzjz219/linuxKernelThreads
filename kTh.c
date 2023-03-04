@@ -52,7 +52,7 @@ static int hello_init(void)
     // tmp1 = get_jiffies_64();
 
 
-    printk(KERN_ALERT "Kernel time is %u \n", (unsigned int)(jiffies64_to_msecs(jiffies)));
+    printk(KERN_ALERT "Kernel time is %d \n", ktime_get_ns()/1000000);
     task();
 	return 0;
 }

@@ -6,6 +6,17 @@
         "init.h": "c",
         "sched.h": "c",
         "time64.h": "c",
-        "task.h": "c"
+        "task.h": "c",
+        "jiffies.h": "c",
+        "plist.h": "c",
+        "immintrin.h": "c",
+        "rtmintrin.h": "c",
+        "msr.h": "c",
+        "types.h": "c",
+        "ioctl.h": "c",
+        "param.h": "c",
+        "timex.h": "c",
+        "ktime.h": "c",
+        "timekeeping.h": "c"
     }
 }
