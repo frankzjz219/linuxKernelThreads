@@ -6,13 +6,13 @@ struct task_struct* threadStruct;
 
 int calc(void *input)
 {
-    unsigned int start, end;
+    u64 start, end;
     // printf("enter\n");
     int rowNum = *(int*)input;
     int sum = 0;
     int i = 0;
     // printf("线程%d: \n", rowNum);
-    start = jiffies64_to_nsecs(jiffies_64);
+    start = ktime_get_ns()%1000000;
     
     for (i = 0; i < SIZEOFVEC; i++)
     {
@@ -21,8 +21,8 @@ int calc(void *input)
     // printf("sum: %d\n", *sum);
     // printf("exit\n");
     seq[rowNum] = sum;
-    end = jiffies64_to_nsecs(jiffies_64);
-    // printk("线程%d 计算结果为 %d 计算时间为 %d纳秒\n", rowNum, sum, end-start);
+    end = ktime_get_ns()%1000000;
+    printk("线程%d 计算结果为 %d 计算时间为 %d纳秒\n", rowNum, sum, end-start);
     return 0;
 }
 
