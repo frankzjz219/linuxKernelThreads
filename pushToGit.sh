@@ -4,7 +4,7 @@ git add *
 read info
 if [[ -n "$info" ]]
 then
-    echo "正在commit: $info"
+    # echo "正在commit: $info"
     git commit -m "$info"
     echo "正在push: $info"
     git push origin master
