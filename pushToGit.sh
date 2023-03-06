@@ -1,7 +1,9 @@
 #!/bin/bash 
 git add .
 git add *
+echo "请输入commit信息："
 read info
+# 字符串非空判断等
 if [[ -n "$info" ]]
 then
     # echo "正在commit: $info"
